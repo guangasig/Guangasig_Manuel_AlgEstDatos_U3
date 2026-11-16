@@ -1,12 +1,6 @@
 # Red de ciudades CarUPS
 
-Proyecto académico de la Unidad 3 de la asignatura **Algoritmos y Estructuras de Datos**. El programa modela una red de ciudades conectadas mediante carreteras, realiza un recorrido BFS y calcula distancias mínimas con Dijkstra.
-
-## Requisitos
-
-- Python 3.
-
-El proyecto utiliza únicamente la biblioteca estándar de Python. No requiere instalar NetworkX ni otros paquetes externos.
+El programa modela una red de ciudades conectadas mediante carreteras, realiza un recorrido BFS y calcula distancias mínimas con Dijkstra.
 
 ## Ejecución
 
@@ -48,12 +42,12 @@ Las rutas no coinciden porque BFS minimiza el número de tramos, sin considerar 
 
 ## Complejidad temporal
 
-| Requerimiento | Operación | Complejidad |
-|---|---|---:|
-| R1 | Calcular el grado de todas las ciudades | O(V) |
-| R2 | Recorrer la red con BFS | O(V + E) |
-| R3 | Calcular distancias con Dijkstra | O((V + E) log V) |
-| R4 | Comparar las rutas | O((V + E) log V) |
+| Requerimiento | Operación                               |      Complejidad |
+| ------------- | --------------------------------------- | ---------------: |
+| R1            | Calcular el grado de todas las ciudades |             O(V) |
+| R2            | Recorrer la red con BFS                 |         O(V + E) |
+| R3            | Calcular distancias con Dijkstra        | O((V + E) log V) |
+| R4            | Comparar las rutas                      | O((V + E) log V) |
 
 El factor logarítmico de Dijkstra aparece porque utiliza una cola de prioridad. Cada inserción o extracción del montículo cuesta O(log V).
 
